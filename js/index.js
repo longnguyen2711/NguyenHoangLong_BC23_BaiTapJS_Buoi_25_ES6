@@ -1,6 +1,9 @@
 document.querySelector("#signup-form .actions ul li:last-child").onclick = () => {
+    let btnFinish = document.querySelector("#signup-form .actions ul li:last-child a");
+    btnFinish.className = "btn btn-success";
+    btnFinish.innerHTML = "Thành công"
+  
     let arrInput = document.querySelectorAll("#signup-form input, #signup-form select");
-
     let infomation = {};
     for (let input of arrInput) {
       let { id, value } = input;
@@ -27,7 +30,7 @@ document.querySelector("#signup-form .actions ul li:last-child").onclick = () =>
       nam: "Năm sinh",
       diaChi: "Địa chỉ",
       thongTinDiChuyen: "Thông tin chi chuyển",
-      loaiNhiem: "Nghi nhiễm",
+      loaiNhiem: "Nghi nhiễm"
     };
 
     let count = 1;

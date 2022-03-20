@@ -585,3 +585,7 @@ input.error {
   font-size: 22px;
   color: #4966b1;
 }
+.btnFinish{
+  background-color: #f63726;
+  color: yellow;
+}
